@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace MusicAPI.Models
 {
-    public class SongModel
+    public class ArtistModel
     {
         [Key]
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(50)]
-        public string Title { get; set; }
+        public string Name { get; set; }
 
         [Required]
-        public ArtistModel Artist { get; set; }
-
-        //public Genre Genre { get; set; }
-
-        [Required]
-        public int Year { get; set; }
+        public string Publisher { get; set; }
     }
 }
